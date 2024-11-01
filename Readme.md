@@ -52,6 +52,7 @@
 | <a name="output_public_subnets_cidr_blocks"></a> [public\_subnets\_cidr\_blocks](#output\_public\_subnets\_cidr\_blocks) | List of cidr\_blocks of public subnets |
 | <a name="output_rds_master_db_instance_address"></a> [rds\_master\_db\_instance\_address](#output\_rds\_master\_db\_instance\_address) | The address of the RDS instance |
 | <a name="output_rds_master_db_instance_endpoint"></a> [rds\_master\_db\_instance\_endpoint](#output\_rds\_master\_db\_instance\_endpoint) | The endpoint of the RDS instance |
+| <a name="output_rds_master_db_instance_identifier"></a> [rds\_master\_db\_instance\_identifier](#output\_rds\_master\_db\_instance\_identifier) | The RDS identifier |
 | <a name="output_security_group_name"></a> [security\_group\_name](#output\_security\_group\_name) | The name of the security group |
 | <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | The ARN of the VPC |
 | <a name="output_vpc_cidr_block"></a> [vpc\_cidr\_block](#output\_vpc\_cidr\_block) | The CIDR block of the VPC |
