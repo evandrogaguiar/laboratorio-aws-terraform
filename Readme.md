@@ -3,7 +3,7 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.46 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.62 |
 
 ## Providers
 
@@ -15,6 +15,9 @@
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_rds-master"></a> [rds-master](#module\_rds-master) | terraform-aws-modules/rds/aws | ~> 6.10 |
+| <a name="module_rds-replica"></a> [rds-replica](#module\_rds-replica) | terraform-aws-modules/rds/aws | ~> 6.10 |
+| <a name="module_secrets_manager_rds"></a> [secrets\_manager\_rds](#module\_secrets\_manager\_rds) | terraform-aws-modules/secrets-manager/aws | ~> 1.3 |
 | <a name="module_security-group-rds"></a> [security-group-rds](#module\_security-group-rds) | terraform-aws-modules/security-group/aws | ~> 5.0 |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 5.0 |
 
@@ -47,6 +50,8 @@
 | <a name="output_private_subnets_cidr_blocks"></a> [private\_subnets\_cidr\_blocks](#output\_private\_subnets\_cidr\_blocks) | List of cidr\_blocks of private subnets |
 | <a name="output_public_subnets"></a> [public\_subnets](#output\_public\_subnets) | List of IDs of public subnets |
 | <a name="output_public_subnets_cidr_blocks"></a> [public\_subnets\_cidr\_blocks](#output\_public\_subnets\_cidr\_blocks) | List of cidr\_blocks of public subnets |
+| <a name="output_rds_master_db_instance_address"></a> [rds\_master\_db\_instance\_address](#output\_rds\_master\_db\_instance\_address) | The address of the RDS instance |
+| <a name="output_rds_master_db_instance_endpoint"></a> [rds\_master\_db\_instance\_endpoint](#output\_rds\_master\_db\_instance\_endpoint) | The endpoint of the RDS instance |
 | <a name="output_security_group_name"></a> [security\_group\_name](#output\_security\_group\_name) | The name of the security group |
 | <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | The ARN of the VPC |
 | <a name="output_vpc_cidr_block"></a> [vpc\_cidr\_block](#output\_vpc\_cidr\_block) | The CIDR block of the VPC |

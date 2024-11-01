@@ -57,3 +57,13 @@ output "security_group_name" {
   description = "The name of the security group"
   value       = module.security-group-rds.security_group_name
 }
+
+output "rds_master_db_instance_address" {
+  description = "The address of the RDS instance"
+  value       = module.rds-master.db_instance_address
+}
+
+output "rds_master_db_instance_endpoint" {
+  description = "The endpoint of the RDS instance"
+  value       = module.rds-master.db_instance_endpoint
+}
