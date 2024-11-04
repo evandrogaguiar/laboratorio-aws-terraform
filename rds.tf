@@ -38,6 +38,8 @@ module "rds-master" {
   performance_insights_enabled          = true
   performance_insights_retention_period = 7
 
+  tags = local.tags
+
 }
 
 module "rds-replica" {
@@ -78,5 +80,7 @@ module "rds-replica" {
 
   enabled_cloudwatch_logs_exports = ["general", "audit", "slowquery"]
   create_cloudwatch_log_group     = true
+
+  tags = local.tags
 
 }
