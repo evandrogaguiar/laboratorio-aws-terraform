@@ -70,5 +70,5 @@ output "rds_master_db_instance_endpoint" {
 
 output "rds_master_db_instance_identifier" {
   description = "The RDS identifier"
-  value = module.rds-master.db_instance_identifier
+  value       = module.rds-master.db_instance_identifier
 }
