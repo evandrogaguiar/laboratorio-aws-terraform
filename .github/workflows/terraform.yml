@@ -31,8 +31,6 @@ jobs:
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
-      with:
-        terraform_version: latest
 
     - name: Terraform Init
       run: terraform init -backend=true
@@ -67,8 +65,6 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
-        with:
-          terraform_version: latest
       
       - name: Terraform Init
         run: terraform init -backend=true
