@@ -13,11 +13,6 @@ variable "region" {
   default     = "sa-east-1"
 }
 
-variable "profile" {
-  type    = string
-  default = null
-}
-
 #VPC
 variable "vpc_cidr" {
   description = "The IPv4 block used for main CIDR on VPC and subnets"
