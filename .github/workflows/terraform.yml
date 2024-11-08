@@ -31,7 +31,7 @@ jobs:
         terraform_version: latest
 
     - name: Terraform Init
-      run: terraform init -backend-config
+      run: terraform init -backend=true
 
     - name: Terraform Format
       run: terraform fmt -check
@@ -67,7 +67,7 @@ jobs:
           terraform_version: latest
       
       - name: Terraform Init
-        run: terraform init -backend-config
+        run: terraform init -backend=true
   
       - name: Terraform Format
         run: terraform fmt -check
