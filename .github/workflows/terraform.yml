@@ -47,6 +47,9 @@ jobs:
     - name: Terraform Plan
       run: terraform plan --var-file=envs/dev.tfvars
 
+    - name: Terraform Apply
+      run: terraform apply -auto-approve -input=false
+
   prod:
     runs-on: ubuntu-latest
     needs: dev
@@ -80,3 +83,6 @@ jobs:
       
       - name: Terraform Plan
         run: terraform plan --var-file=envs/prod.tfvars
+      
+      - name: Terraform Apply
+        run: terraform apply -auto-approve -input=false
