@@ -1,6 +1,5 @@
 provider "aws" {
   region = var.region
-  profile = "udemy"
 }
 
 data "aws_vpc" "default" {
