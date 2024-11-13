@@ -19,5 +19,13 @@ module "vpc" {
   single_nat_gateway     = true
   one_nat_gateway_per_az = false
 
+  public_subnet_tags = {
+    "kubernetes.io/role/elb" = 1
+  }
+
+  private_acl_tags = {
+    "kubernetes.io/role/internal-elb" = 1
+  }
+
   tags = local.tags
 }

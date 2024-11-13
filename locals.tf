@@ -1,5 +1,7 @@
 data "aws_availability_zones" "available" {}
 
+data "aws_region" "current" {}
+
 locals {
   aws_resource_prefix = "${var.environment}-lab"
 

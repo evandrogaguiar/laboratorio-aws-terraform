@@ -1,3 +1,4 @@
+#VPC
 output "vpc_id" {
   description = "The ID of the VPC"
   value       = module.vpc.vpc_id
@@ -38,6 +39,7 @@ output "nat_public_ips" {
   value       = module.vpc.nat_public_ips
 }
 
+#RDS
 output "database_subnets" {
   description = "List of IDs of database subnets"
   value       = module.vpc.database_subnets
@@ -71,4 +73,30 @@ output "rds_master_db_instance_endpoint" {
 output "rds_master_db_instance_identifier" {
   description = "The RDS identifier"
   value       = module.rds-master.db_instance_identifier
+}
+
+#EKS
+output "eks_cluster_arn" {
+  description = "The Amazon Resource Name (ARN) of the cluster"
+  value       = module.eks.cluster_arn
+}
+
+output "eks_cluster_name" {
+  description = "The Name of the EKS cluster"
+  value       = module.eks.cluster_name
+}
+
+output "eks_cluster_endpoint" {
+  description = "Endpoint for your Kubernetes API Server"
+  value       = module.eks.cluster_endpoint
+}
+
+output "eks_cluster_version" {
+  description = "The Kubernetes version for the cluster"
+  value       = module.eks.cluster_version
+}
+
+output "eks_cluster_oidc_issuer_url" {
+  description = "The URL on the EKS cluster for the OpenID Connect identity provider"
+  value       = module.eks.cluster_oidc_issuer_url
 }
